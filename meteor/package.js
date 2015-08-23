@@ -1,16 +1,16 @@
 // package metadata file for Meteor.js
 'use strict';
 
-var packageName = 'chart:chart';  // https://atmospherejs.com/chart/chart
+var packageName = 'csl:chart';  // https://atmospherejs.com/chart/chart
 var where = 'client';  // where to install: 'client' or 'server'. For both, pass nothing.
 
 var packageJson = JSON.parse(Npm.require("fs").readFileSync('package.json'));
 
 Package.describe({
   name: packageName,
-  summary: 'Chart.js (official) - Responsive, simple, clean and interactive charts using HTML5 <canvas>',
+  summary: 'Chart.js fork with a bootstrap fix',
   version: packageJson.version,
-  git: 'https://github.com/MeteorPackaging/Chart.js.git'
+  git: 'https://github.com/CarlQLange/Chart.js.git'
 });
 
 Package.onUse(function (api) {
